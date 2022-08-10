@@ -41,7 +41,7 @@ public class RadioTest {
     @Test
     public void TestVolume2() {
         Radio radio = new Radio();
-        radio.setCurrentVolume(12);
+        radio.setCurrentVolume(112);
 
         assertEquals(0, radio.getCurrentVolume());
     }
@@ -120,11 +120,11 @@ public class RadioTest {
     @Test
     public void MaxVolume() {
         Radio radio = new Radio();
-        radio.setCurrentVolume(10);
+        radio.setCurrentVolume(100);
 
         radio.increaseVolume();
 
-        assertEquals(10, radio.getCurrentVolume());
+        assertEquals(100, radio.getCurrentVolume());
     }
 
     @Test
